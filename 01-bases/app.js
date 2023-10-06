@@ -9,14 +9,14 @@ const contar = (heroes) => {
 const superHeroes = ['Flash', 'Arrow', 'Superman', 'Linterna Verde'];
 contar(superHeroes);
 //Parametros por defecto
-const llamarBatman = (llamar) => {
+const llamarBatman = (llamar = true) => {
     if (llamar) {
         console.log('Batiseñal activada');
     }
 };
 llamarBatman();
 // Rest?
-const unirheroes = (personas) => {
+const unirheroes = (...personas) => {
     return personas.join(', ');
 };
 // Tipo funcion
