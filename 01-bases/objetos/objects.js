@@ -9,9 +9,11 @@
         name: 'Clark Kent',
         // age: 60,
         powers: ['Super fuerza'],
-        // getName() {
-        //   return this.name;
-        // }
+        getName() {
+            return this.name;
+        },
     };
-    console.log(flash);
+    if (flash && flash.getName) {
+        console.log(flash.getName());
+    }
 })();
