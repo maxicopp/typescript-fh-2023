@@ -19,4 +19,6 @@
     age: 60,
     powers: ['Super fuerza', 'Viajar en el tiempo'],
   };
+
+  console.log(flash);
 })();
