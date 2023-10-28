@@ -15,10 +15,30 @@
         }
     }
     Avenger.avgAge = 35;
-    const antman = new Avenger('Antman', 'Capitan', 'Scott Lang');
-    console.log(antman);
-    console.log(Avenger.avgAge);
-    console.log(antman.bio());
-    console.log(Avenger.getAvgAge());
+})();
+(() => {
+    class Avenger {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            console.log('Constructor Avenger llamado');
+        }
+        getFullname() {
+            return `${this.name} ${this.realName}`;
+        }
+    }
+    class XMen extends Avenger {
+        constructor(name, realName, isMutant) {
+            super(name, realName);
+            this.isMutant = isMutant;
+            console.log('Constructor XMen llamado');
+        }
+        getFullnameFromXMen() {
+            console.log(super.getFullname());
+        }
+    }
+    const wolverine = new XMen('Wolverine', 'Logan', true);
+    console.log(wolverine);
+    wolverine.getFullnameFromXMen();
 })();
 //# sourceMappingURL=main.js.map
