@@ -21,7 +21,6 @@
     const printName = (character) => {
         console.log(character.realName);
     };
-    printName(wolverine);
 })();
 (() => {
     class Avenger {
@@ -71,5 +70,26 @@
     const wolverine = new XMen('Wolverine', 'Logan', true);
     wolverine.getFullnameFromXMen();
     wolverine.fullName = 'Max';
+})();
+(() => {
+    class Apocalipsis {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.instance) {
+                Apocalipsis.instance = new Apocalipsis('Soy apocalipsis');
+            }
+            return Apocalipsis.instance;
+        }
+        changeName(name) {
+            this.name = name;
+        }
+    }
+    const apocalipsis1 = Apocalipsis.callApocalipsis();
+    const apocalipsis2 = Apocalipsis.callApocalipsis();
+    const apocalipsis3 = Apocalipsis.callApocalipsis();
+    apocalipsis1.changeName('Xavier');
+    console.log(apocalipsis1, apocalipsis2, apocalipsis3);
 })();
 //# sourceMappingURL=main.js.map
