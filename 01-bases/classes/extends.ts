@@ -1,7 +1,7 @@
 (() => {
   class Avenger {
     constructor(public name: string, public realName: string) {
-      console.log('Constructor Avenger llamado');
+      // console.log('Constructor Avenger llamado');
     }
 
     protected getFullname() {
@@ -12,7 +12,7 @@
   class XMen extends Avenger {
     constructor(name: string, realName: string, public isMutant: boolean) {
       super(name, realName);
-      console.log('Constructor XMen llamado');
+      // console.log('Constructor XMen llamado');
     }
 
     get fullName() {
@@ -27,16 +27,16 @@
     }
 
     getFullnameFromXMen() {
-      console.log(super.getFullname());
+      return super.getFullname();
     }
   }
 
   const wolverine = new XMen('Wolverine', 'Logan', true);
-  console.log(wolverine);
+  // console.log(wolverine);
   wolverine.getFullnameFromXMen();
-  console.log(wolverine.fullName);
+  // console.log(wolverine.fullName);
 
   wolverine.fullName = 'Max';
 
-  console.log(wolverine);
+  // console.log(wolverine);
 })();
