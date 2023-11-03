@@ -38,5 +38,5 @@
     },
   };
 
-  console.log(client1, client2);
+  //   console.log(client1, client2);
 })();
