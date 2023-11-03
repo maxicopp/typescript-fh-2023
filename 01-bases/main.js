@@ -20,6 +20,9 @@
             zip: 'KY2 SUD',
             city: 'Frankfurt',
         },
+        getFullAddress(id) {
+            return this.address.city;
+        },
     };
     const client2 = {
         name: 'Maca',
@@ -28,6 +31,9 @@
             id: 120,
             zip: 'KY2 SUD',
             city: 'Toronto',
+        },
+        getFullAddress(id) {
+            return this.address.city;
         },
     };
     console.log(client1, client2);
