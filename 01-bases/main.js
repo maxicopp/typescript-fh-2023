@@ -10,7 +10,26 @@
         age: 60,
         powers: [1],
     };
-    console.log(flash);
-    console.log(superman);
+})();
+(() => {
+    const client1 = {
+        name: 'Max',
+        age: 25,
+        address: {
+            id: 125,
+            zip: 'KY2 SUD',
+            city: 'Frankfurt',
+        },
+    };
+    const client2 = {
+        name: 'Maca',
+        age: 23,
+        address: {
+            id: 120,
+            zip: 'KY2 SUD',
+            city: 'Toronto',
+        },
+    };
+    console.log(client1, client2);
 })();
 //# sourceMappingURL=main.js.map

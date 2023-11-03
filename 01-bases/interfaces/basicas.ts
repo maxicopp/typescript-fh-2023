@@ -18,6 +18,6 @@
     powers: [1],
   };
 
-  console.log(flash);
-  console.log(superman);
+  // console.log(flash);
+  // console.log(superman);
 })();
