@@ -44,4 +44,8 @@
         },
     };
 })();
+(() => {
+    const addNumbersFunction = (a, b) => a + b;
+    console.log(addNumbersFunction(1, 2));
+})();
 //# sourceMappingURL=main.js.map
