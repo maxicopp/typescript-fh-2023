@@ -1,9 +1,10 @@
-import { Hero } from './classes/Hero';
+import { genericFunction, printObject } from './generics/generics';
 
-// import { Hero as SuperHero } from './classes/Hero';
-// import * as HeroClasses from './classes/Hero';
-// import powers from './data/powers';
+// printObject({ name: 'Tony', age: 45 });
+// printObject([1, 2, 3, 4, 5]);
+// printObject(10);
+// printObject(new Date());
+// printObject('Hello');
 
-const ironman = new Hero('Ironman', 1, 45);
-
-console.log(ironman.power);
+console.log(genericFunction(3.141618).toFixed(2));
+console.log(genericFunction('Hello World').toFixed(2));
